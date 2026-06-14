@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Research notes from berlinagile on diversity, remote work, multilingual communication, and inclusion in Agile teams.">
+  <title>Research — berlinagile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="research.css">
+</head>
+<body class="research-page">
+  <header class="site-header research-header">
+    <a class="brand" href="index.html" aria-label="berlinagile home">
+      <span class="brand-mark" aria-hidden="true">
+        <span></span><span></span><span></span><span></span>
+      </span>
+      <span>berlinagile<span class="brand-dot">.</span></span>
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">
+      <span></span><span></span>
+      <span class="sr-only">Toggle navigation</span>
+    </button>
+    <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+      <a class="active" href="research.html" aria-current="page">Research</a>
+      <a href="index.html#services">Coaching</a>
+      <a href="index.html#approach">Approach</a>
+      <a href="index.html#contact" class="nav-cta">Let's talk <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="research-hero">
+      <div class="reading-column">
+        <p class="publication-kicker">berlinagile research</p>
+        <h1>Learning in public about <em>how teams belong.</em></h1>
+        <p class="research-lede">Field notes, evidence, and practical experiments for people building diverse Agile teams. Written to be read, questioned, and used.</p>
+        <div class="research-actions">
+          <a class="research-button" href="#latest">Read the latest</a>
+          <a class="tree-link" href="#research-tree">
+            <span class="tree-link-icon" aria-hidden="true"><i></i><i></i><i></i></span>
+            Follow the diversity research tree
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="latest" class="research-section">
+      <div class="reading-column">
+        <div class="research-section-head">
+          <div>
+            <p class="publication-kicker">Latest research</p>
+            <h2>Notes from the work</h2>
+          </div>
+          <p>Short, useful reads. No jargon required.</p>
+        </div>
+
+        <div class="topic-filters" aria-label="Filter research by topic">
+          <button class="topic-filter active" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="topic-filter" type="button" data-filter="diversity" aria-pressed="false">Diversity</button>
+          <button class="topic-filter" type="button" data-filter="remote" aria-pressed="false">Remote work</button>
+          <button class="topic-filter" type="button" data-filter="language" aria-pressed="false">Language</button>
+          <button class="topic-filter" type="button" data-filter="inclusion" aria-pressed="false">Inclusion</button>
+        </div>
+
+        <div class="article-list">
+          <article class="featured-article research-entry" data-topic="diversity inclusion">
+            <div class="article-copy">
+              <p class="article-meta"><span>Diversity</span> Research in progress · 8 min read</p>
+              <h3>Agile teams are diverse. Their ways of working often are not.</h3>
+              <p>Our first synthesis explores where standard Agile rituals quietly reward one communication style, one cultural norm, and one idea of participation.</p>
+              <a href="#research-tree">See what we understand so far <span>→</span></a>
+            </div>
+            <div class="article-signal" aria-hidden="true">
+              <span>Known</span>
+              <span>Learning</span>
+              <span>Testing</span>
+            </div>
+          </article>
+
+          <article class="research-entry" data-topic="remote">
+            <div class="entry-mark remote-mark" aria-hidden="true"></div>
+            <div class="article-copy">
+              <p class="article-meta"><span>Remote work</span> Field note · 6 min read</p>
+              <h3>Remote does not create silence. It makes existing silence easier to miss.</h3>
+              <p>Four signals that tell us when distributed team members are present in the call but absent from the decision.</p>
+              <a href="#remote-note">Read the note <span>→</span></a>
+            </div>
+          </article>
+
+          <article class="research-entry" data-topic="language">
+            <div class="entry-mark language-mark" aria-hidden="true">A<br><small>あ</small></div>
+            <div class="article-copy">
+              <p class="article-meta"><span>Language</span> Working paper · 7 min read</p>
+              <h3>Fluency is not the same as clarity.</h3>
+              <p>How fast conversation, idioms, and facilitation habits shape whose ideas survive multilingual meetings.</p>
+              <a href="#language-note">Read the working paper <span>→</span></a>
+            </div>
+          </article>
+
+          <article class="research-entry" data-topic="inclusion diversity">
+            <div class="entry-mark inclusion-mark" aria-hidden="true"><i></i><i></i><i></i></div>
+            <div class="article-copy">
+              <p class="article-meta"><span>Inclusion</span> Experiment · 5 min read</p>
+              <h3>Belonging needs evidence, not intention.</h3>
+              <p>A lightweight retrospective check that reveals who can challenge, influence, and change the team's direction.</p>
+              <a href="#inclusion-note">Try the experiment <span>→</span></a>
+            </div>
+          </article>
+        </div>
+        <p class="no-results" role="status" hidden>No notes in this topic yet.</p>
+      </div>
+    </section>
+
+    <section id="research-tree" class="tree-section">
+      <div class="reading-column">
+        <div class="tree-intro">
+          <p class="publication-kicker">Living research tree</p>
+          <h2>Understanding the diversity challenge</h2>
+          <p>This is not a finished framework. It shows how the research is growing: what has been observed, what we think it means, and what still needs to be tested.</p>
+          <div class="tree-legend" aria-label="Research status legend">
+            <span><i class="complete"></i> Evidence gathered</span>
+            <span><i class="active"></i> Current inquiry</span>
+            <span><i class="next"></i> Next to explore</span>
+          </div>
+        </div>
+
+        <ol class="research-tree">
+          <li class="tree-node complete">
+            <button type="button" aria-expanded="false">
+              <span class="node-dot"></span>
+              <span class="node-copy"><small>01 · Observe</small><strong>Where participation becomes unequal</strong></span>
+              <span class="node-action">+</span>
+            </button>
+            <div class="node-detail">
+              <p>We are mapping who speaks, who is interrupted, whose ideas receive credit, and which decisions happen outside the visible team process.</p>
+              <span class="evidence">12 interviews · 8 team observations</span>
+            </div>
+          </li>
+          <li class="tree-node complete">
+            <button type="button" aria-expanded="false">
+              <span class="node-dot"></span>
+              <span class="node-copy"><small>02 · Understand</small><strong>Name the forces behind the pattern</strong></span>
+              <span class="node-action">+</span>
+            </button>
+            <div class="node-detail">
+              <p>Early themes include language confidence, cultural distance from authority, time-zone privilege, facilitation speed, and uneven psychological safety.</p>
+              <span class="evidence">5 recurring patterns identified</span>
+            </div>
+          </li>
+          <li class="tree-node active">
+            <button type="button" aria-expanded="true">
+              <span class="node-dot"></span>
+              <span class="node-copy"><small>03 · Reframe</small><strong>Define inclusion as influence</strong></span>
+              <span class="node-action">−</span>
+            </button>
+            <div class="node-detail">
+              <p>We are testing a sharper definition: a team is inclusive when every member can understand, challenge, influence, and change the work, not merely attend its rituals.</p>
+              <span class="evidence">Current inquiry · synthesis underway</span>
+            </div>
+          </li>
+          <li class="tree-node next">
+            <button type="button" aria-expanded="false">
+              <span class="node-dot"></span>
+              <span class="node-copy"><small>04 · Experiment</small><strong>Change the team environment</strong></span>
+              <span class="node-action">+</span>
+            </button>
+            <div class="node-detail">
+              <p>Candidate experiments include silent-first ideation, asynchronous challenge windows, rotating decision roles, and multilingual preparation time.</p>
+              <span class="evidence">Next · partner teams wanted</span>
+            </div>
+          </li>
+          <li class="tree-node next">
+            <button type="button" aria-expanded="false">
+              <span class="node-dot"></span>
+              <span class="node-copy"><small>05 · Learn</small><strong>Measure whether influence changes</strong></span>
+              <span class="node-action">+</span>
+            </button>
+            <div class="node-detail">
+              <p>We will compare speaking balance, idea adoption, challenge behavior, decision clarity, and reported belonging before and after each experiment.</p>
+              <span class="evidence">Planned research</span>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="research-note-section">
+      <div class="reading-column">
+        <article id="remote-note" class="mini-note">
+          <p class="article-meta"><span>Remote work</span> Current question</p>
+          <h2>Can everyone shape the decision, or only witness it?</h2>
+          <p>Our remote-work research looks beyond cameras and meeting attendance. We track where decisions form, how context travels, and whether asynchronous contributors can alter an outcome before it becomes final.</p>
+        </article>
+        <article id="language-note" class="mini-note">
+          <p class="article-meta"><span>Language</span> Current question</p>
+          <h2>What changes when the fastest speaker is not treated as the clearest thinker?</h2>
+          <p>We are studying meeting pace, preparation time, written follow-up, idioms, and facilitation techniques that let people reason in more than one language.</p>
+        </article>
+        <article id="inclusion-note" class="mini-note">
+          <p class="article-meta"><span>Inclusion</span> Practical experiment</p>
+          <h2>Ask whose mind changed the work.</h2>
+          <p>At the end of a retrospective, list the ideas that changed the team's next step. Then ask whose perspectives are repeatedly present, absent, or acknowledged but not acted upon.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="research-invite">
+      <div class="reading-column">
+        <p class="publication-kicker">Contribute to the research</p>
+        <h2>Working on one of these challenges?</h2>
+        <p>I am looking for teams willing to share experiences or test small changes in their real work.</p>
+        <a class="research-button dark" href="index.html#contact">Start a conversation <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+      <span>berlinagile<span class="brand-dot">.</span></span>
+    </a>
+    <p>Researching better ways to work together.</p>
+    <div class="footer-links"><a href="research.html">Research</a><a href="mailto:hello@berlinagile.com">Email</a><span>© 2026 berlinagile</span></div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="research.js"></script>
+</body>
+</html>
