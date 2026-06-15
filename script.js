@@ -13,6 +13,27 @@ navigation.querySelectorAll("a").forEach((link) => {
   });
 });
 
+const scrollToPageTarget = (hash) => {
+  if (!hash || hash === "#") return;
+  const target = document.querySelector(hash);
+  if (target) target.scrollIntoView({ block: "start" });
+};
+
+document.addEventListener("click", (event) => {
+  const link = event.target.closest('a[href^="#"]');
+  if (!link) return;
+  const hash = link.getAttribute("href");
+  if (!hash || hash === "#") return;
+  event.preventDefault();
+  history.pushState(null, "", hash);
+  scrollToPageTarget(hash);
+});
+
+if (window.location.hash) {
+  scrollToPageTarget(window.location.hash);
+  window.addEventListener("load", () => scrollToPageTarget(window.location.hash), { once: true });
+}
+
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -44,10 +65,25 @@ const statObserver = new IntersectionObserver((entries) => {
 
 document.querySelectorAll("[data-target]").forEach((stat) => statObserver.observe(stat));
 
-document.querySelector(".contact-form").addEventListener("submit", (event) => {
-  event.preventDefault();
-  const form = event.currentTarget;
-  const name = new FormData(form).get("name").trim().split(" ")[0];
-  form.querySelector(".form-status").textContent = `Thanks, ${name}. Your message is ready to send once this form is connected to your email service.`;
-  form.reset();
-});
+const contactForm = document.querySelector(".contact-form");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+    const calendlyUrl = form.dataset.calendlyUrl.trim();
+    const status = form.querySelector(".form-status");
+
+    if (!calendlyUrl) {
+      status.textContent = "Add your Calendly event link to activate booking.";
+      return;
+    }
+
+    const bookingUrl = new URL(calendlyUrl);
+    bookingUrl.searchParams.set("name", formData.get("name").trim());
+    bookingUrl.searchParams.set("email", formData.get("email").trim());
+    bookingUrl.searchParams.set("a1", formData.get("message").trim());
+    window.location.assign(bookingUrl.toString());
+  });
+}

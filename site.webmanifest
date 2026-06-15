@@ -1,0 +1,23 @@
+{
+  "name": "Berlinagile",
+  "short_name": "Berlinagile",
+  "description": "Agile coaching and research for healthier, more effective teams.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#fffcf7",
+  "theme_color": "#142b36",
+  "icons": [
+    {
+      "src": "assets/berlinagile-logo-256.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/berlinagile-icon-64.png",
+      "sizes": "64x64",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
