@@ -389,6 +389,39 @@
   transform: none;
 }
 
+.community-mark {
+  display: grid;
+  place-content: center;
+}
+
+.community-mark::before,
+.community-mark::after {
+  content: "";
+  position: absolute;
+  width: 74px;
+  height: 1px;
+  background: var(--navy);
+  transform: rotate(35deg);
+}
+
+.community-mark::after {
+  transform: rotate(-35deg);
+}
+
+.community-mark i {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--navy);
+  z-index: 1;
+}
+
+.community-mark i:first-child { transform: translate(-43px, -30px); }
+.community-mark i:nth-child(2) { transform: translate(43px, -30px); background: var(--coral); }
+.community-mark i:nth-child(3) { transform: translate(-43px, 30px); background: var(--mint); }
+.community-mark i:last-child { transform: translate(43px, 30px); background: var(--yellow); }
+
 .no-results {
   padding: 50px 0;
   color: var(--muted);
@@ -577,6 +610,50 @@
   font: 400 15px/1.6 "Source Serif 4", Georgia, serif;
 }
 
+.article-credits {
+  margin-top: 58px;
+  padding: 30px 34px;
+  border-left: 3px solid var(--coral);
+  background: var(--cream);
+}
+
+.article-credits h3 {
+  margin-bottom: 20px;
+  font-size: 19px;
+}
+
+.article-credits dl {
+  margin: 0;
+}
+
+.article-credits dl div {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 18px;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.article-credits dt {
+  color: var(--coral);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.article-credits dd {
+  margin: 0;
+  color: #53636a;
+  font: 400 15px/1.55 "Source Serif 4", Georgia, serif;
+}
+
+.adaptation-note {
+  margin: 22px 0 0;
+  color: var(--navy);
+  font: 600 14px/1.55 "Source Serif 4", Georgia, serif;
+}
+
 .mini-note { padding: 70px 0; border-bottom: 1px solid var(--line); scroll-margin-top: 100px; }
 .mini-note:first-child { padding-top: 0; }
 .mini-note h2 { max-width: 700px; font: 600 clamp(32px, 4.3vw, 53px)/1.16 "Source Serif 4", Georgia, serif; letter-spacing: -.03em; }
@@ -615,6 +692,8 @@
   .research-entry { gap: 23px; }
   .article-sources { padding: 24px 20px; }
   .study-attribution { grid-template-columns: 1fr; gap: 8px; }
+  .article-credits { padding: 24px 20px; }
+  .article-credits dl div { grid-template-columns: 1fr; gap: 4px; }
   .tree-legend { gap: 12px 18px; }
   .tree-node { padding-left: 42px; }
   .research-tree::before { left: 11px; }
