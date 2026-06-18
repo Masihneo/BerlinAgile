@@ -45,25 +45,25 @@ const revealObserver = new IntersectionObserver((entries) => {
 
 document.querySelectorAll(".reveal").forEach((element) => revealObserver.observe(element));
 
-const statObserver = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (!entry.isIntersecting) return;
-    const target = Number(entry.target.dataset.target);
-    const duration = 1000;
-    const start = performance.now();
+document.querySelectorAll(".rhythm-frame").forEach((frame) => {
+  const video = frame.querySelector("video");
+  const button = frame.querySelector(".video-sound-toggle");
+  if (!video || !button) return;
 
-    const count = (now) => {
-      const progress = Math.min((now - start) / duration, 1);
-      entry.target.textContent = String(Math.round(target * (1 - Math.pow(1 - progress, 3))));
-      if (progress < 1) requestAnimationFrame(count);
-    };
+  button.addEventListener("click", async () => {
+    const willUnmute = video.muted;
+    video.muted = !willUnmute;
+    button.classList.toggle("is-on", willUnmute);
+    button.setAttribute("aria-pressed", String(willUnmute));
+    button.setAttribute("aria-label", willUnmute
+      ? (document.documentElement.lang === "de" ? "Ton des Videos ausschalten" : "Turn video sound off")
+      : (document.documentElement.lang === "de" ? "Ton des Videos einschalten" : "Turn video sound on"));
 
-    requestAnimationFrame(count);
-    statObserver.unobserve(entry.target);
+    if (willUnmute && video.paused) {
+      video.play().catch(() => {});
+    }
   });
-}, { threshold: 0.6 });
-
-document.querySelectorAll("[data-target]").forEach((stat) => statObserver.observe(stat));
+});
 
 const contactForm = document.querySelector(".contact-form");
 
@@ -103,8 +103,8 @@ if (contactForm) {
         : "Thank you. Your request has been sent.";
     } catch (error) {
       status.textContent = isGerman
-        ? "Das hat leider nicht geklappt. Bitte schreiben Sie direkt an Berlinagile@gmail.com."
-        : "Something went wrong. Please email Berlinagile@gmail.com directly.";
+        ? "Das hat leider nicht geklappt. Bitte schreiben Sie direkt an hello@berlinagile.de."
+        : "Something went wrong. Please email hello@berlinagile.de directly.";
     } finally {
       if (submitButton) submitButton.disabled = false;
     }
