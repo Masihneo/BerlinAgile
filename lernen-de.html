@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="40 kostenlose Deutschlektionen für B1, B2, C1 und den Beruf. Wortschatz, Grammatik, Beispiele und Übungen in einem klaren Lernpfad.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Masih Adavoodi">
+<meta name="theme-color" content="#142b36">
+<title>40 Deutschlektionen für Prüfung und Beruf | Berlinagile</title>
+<link rel="canonical" href="lernen-de.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="Deutsch-Sprint by Berlinagile">
+<meta property="og:url" content="lernen-de.html">
+<meta property="og:title" content="40 Deutschlektionen für Prüfung und Beruf | Berlinagile">
+<meta property="og:description" content="Ein kostenloser Lernpfad für B1, B2, C1 und den Beruf mit Wortschatz, Fokus, Beispielen und Übungen.">
+<meta property="og:image" content="assets/berlinagile-social-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="40 Deutschlektionen für Prüfung und Beruf | Berlinagile">
+<meta name="twitter:description" content="Ein kostenloser Lernpfad für B1, B2, C1 und den Beruf mit Wortschatz, Fokus, Beispielen und Übungen.">
+<meta name="twitter:image" content="assets/berlinagile-social-card.png">
+<link rel="icon" href="assets/berlinagile-icon-64.png" type="image/png" sizes="64x64">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preload" href="assets/fonts/dm-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/manrope-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css?v=30">
+<style>
+  :root{
+    --cream:#F5F0E7;
+    --paper:#FFFCF7;
+    --olive-deep:#142B36;
+    --olive:#A8AD79;
+    --olive-soft:#D9D9B9;
+    --olive-pale:#F0EFE2;
+    --orange:#F7956D;
+    --orange-deep:#D8694B;
+    --ink:#172E38;
+    --ink-soft:#68767B;
+    --line:rgba(20,43,54,0.16);
+    --radius:0;
+    --shadow: 10px 12px 0 rgba(20,43,54,0.08);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  a{color:inherit;text-decoration:none;}
+  body{
+    background:var(--cream);
+    color:var(--ink);
+    font-family:"DM Sans","Segoe UI",sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .sans{ font-family:"DM Sans","Segoe UI",sans-serif; }
+
+  /* ---------- HEADER ---------- */
+  header.site{
+    padding:24px 6vw 42px;
+    border-bottom:1px solid var(--line);
+    background:linear-gradient(180deg, var(--olive-pale) 0%, var(--cream) 100%);
+  }
+  .brand-row{
+    display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px;
+  }
+  .brand{
+    display:flex; align-items:center; gap:14px;
+  }
+  .brand-mark{ width:92px; height:92px; flex:none; }
+  .brand-mark img{display:block; width:100%; height:100%; object-fit:contain;}
+  .brand-name{ font-family:"Manrope","Segoe UI",sans-serif; font-weight:800; font-size:1.05rem; letter-spacing:-0.02em; color:var(--olive-deep);}
+  .brand-tag{ font-family:"DM Sans","Segoe UI",sans-serif; font-size:0.72rem; color:var(--ink-soft); letter-spacing:0.12em; text-transform:uppercase;}
+  .course-back{font-family:"DM Sans","Segoe UI",sans-serif; font-size:.86rem; font-weight:700; border-bottom:1px solid var(--line); padding-bottom:4px;}
+  .course-back:hover{color:var(--orange-deep);}
+  .site-title{
+    font-family:"Manrope","Segoe UI",sans-serif; font-size:clamp(2.15rem, 4.4vw, 4.4rem);
+    letter-spacing:-0.055em;
+    line-height:1.15; margin:22px 0 10px; color:var(--ink); max-width:780px;
+  }
+  .site-sub{
+    font-family:"DM Sans","Segoe UI",sans-serif;
+    color:var(--ink-soft); font-size:1rem; max-width:640px; line-height:1.6;
+  }
+
+  /* rhythm signature bar in header */
+  .rhythm-strip{
+    display:flex; gap:5px; margin-top:26px; align-items:flex-end; height:26px;
+  }
+  .rhythm-strip span{
+    width:5px; background:var(--olive); border-radius:3px; opacity:0.35;
+    animation: beat 2.6s ease-in-out infinite;
+  }
+  .rhythm-strip span:nth-child(odd){ background:var(--orange); }
+  @keyframes beat{
+    0%,100%{ height:6px; opacity:0.35;}
+    50%{ height:24px; opacity:0.9;}
+  }
+  @media (prefers-reduced-motion: reduce){
+    .rhythm-strip span{ animation:none; height:16px; opacity:0.6;}
+  }
+
+  /* ---------- LAYOUT ---------- */
+  .layout{
+    display:grid;
+    grid-template-columns: 320px 1fr;
+    gap:0;
+    max-width:1200px;
+    margin:0 auto;
+    align-items:start;
+  }
+  @media (max-width: 860px){
+    .layout{ grid-template-columns: 1fr; }
+  }
+
+  /* ---------- SIDEBAR ---------- */
+  nav.tracks{
+    padding:28px 22px 60px;
+    border-right:1px solid var(--line);
+    position:sticky; top:0;
+    max-height:100vh; overflow-y:auto;
+    font-family:"DM Sans","Segoe UI",sans-serif;
+  }
+  @media (max-width: 860px){
+    nav.tracks{ position:static; max-height:none; border-right:none; border-bottom:1px solid var(--line); }
+  }
+  .track-group{ margin-bottom:22px; }
+  .track-head{
+    display:flex; align-items:center; justify-content:space-between;
+    width:100%; text-align:left; font:inherit; color:inherit;
+    padding:12px; border-radius:0; cursor:pointer;
+    background:var(--paper); border:1px solid var(--line);
+    transition:background 0.15s ease;
+  }
+  .track-head:hover{ background:var(--olive-pale); }
+  .track-head.active{ background:var(--olive-deep); border-color:var(--olive-deep); }
+  .track-head.active .track-label, .track-head.active .track-meta{ color:#fff; }
+  .track-label{ font-weight:700; font-size:0.92rem; color:var(--ink); }
+  .track-meta{ font-size:0.72rem; color:var(--ink-soft); }
+  .lesson-list{ list-style:none; margin:8px 0 0; padding:0 0 0 4px; }
+  .lesson-list li button{
+    width:100%; border:0; background:transparent; text-align:left; font:inherit;
+    padding:9px 12px; border-radius:8px; font-size:0.85rem; color:var(--ink-soft);
+    cursor:pointer; display:flex; gap:10px; align-items:baseline;
+    border-left:2px solid transparent;
+  }
+  .lesson-list li button:hover{ background:var(--olive-pale); color:var(--ink); }
+  .lesson-list li.active button{
+    background:var(--olive-pale); color:var(--olive-deep); font-weight:700;
+    border-left:2px solid var(--orange);
+  }
+  .lesson-num{ font-variant-numeric:tabular-nums; color:var(--orange-deep); font-weight:700; font-size:0.75rem; flex:none; width:20px;}
+
+  /* ---------- MAIN ---------- */
+  main{ padding:30px 6vw 80px; min-width:0; }
+  .crumb{
+    font-family:"DM Sans","Segoe UI",sans-serif; font-size:0.75rem; text-transform:uppercase;
+    letter-spacing:0.08em; color:var(--orange-deep); margin-bottom:8px;
+  }
+  .lesson-card{
+    background:var(--paper); border:1px solid var(--line); border-radius:var(--radius);
+    box-shadow:var(--shadow); padding:34px 36px; max-width:760px;
+  }
+  @media (max-width:600px){ .lesson-card{ padding:24px 20px; } }
+  .lesson-title{ font-family:"Manrope","Segoe UI",sans-serif; font-size:clamp(1.55rem,2.8vw,2.35rem); letter-spacing:-0.045em; margin:0 0 6px; color:var(--ink); }
+  .lesson-goal{ font-family:"DM Sans","Segoe UI",sans-serif; color:var(--ink-soft); font-size:0.95rem; margin-bottom:24px; line-height:1.6;}
+  .section-label{
+    font-family:"DM Sans","Segoe UI",sans-serif; font-weight:700; font-size:0.78rem;
+    text-transform:uppercase; letter-spacing:0.08em; color:var(--olive-deep);
+    margin:26px 0 10px; display:flex; align-items:center; gap:8px;
+  }
+  .section-label::before{ content:""; width:16px; height:2px; background:var(--orange); display:inline-block; }
+  .vocab-table{ width:100%; border-collapse:collapse; font-family:"DM Sans","Segoe UI",sans-serif; font-size:0.92rem; }
+  .vocab-table td{ padding:7px 10px 7px 0; border-bottom:1px solid var(--line); vertical-align:top; }
+  .vocab-table td.de{ font-weight:700; color:var(--ink); width:42%; }
+  .vocab-table td.en{ color:var(--ink-soft); }
+  .focus-text, .example-text{ line-height:1.7; font-size:1rem; }
+  .example-box{
+    background:var(--olive-pale); border-left:3px solid var(--olive);
+    padding:14px 18px; border-radius:8px; font-style:italic; line-height:1.65;
+  }
+  .exercise-box{
+    background:var(--cream); border:1px dashed var(--olive-soft); border-radius:8px;
+    padding:16px 18px; font-family:"DM Sans","Segoe UI",sans-serif; font-size:0.93rem; line-height:1.6;
+  }
+  .tip-box{
+    margin-top:26px; padding:14px 18px; border-radius:8px;
+    background:linear-gradient(135deg, rgba(221,138,75,0.12), rgba(124,139,84,0.10));
+    font-family:"DM Sans","Segoe UI",sans-serif; font-size:0.9rem; color:var(--olive-deep);
+    display:flex; gap:10px; align-items:flex-start;
+  }
+  .tip-label{ flex:none; color:var(--orange-deep); font-size:.7rem; font-weight:800; letter-spacing:.09em; text-transform:uppercase; padding-top:2px; }
+  .nav-buttons{
+    display:flex; justify-content:space-between; margin-top:28px; max-width:760px;
+    font-family:"DM Sans","Segoe UI",sans-serif;
+  }
+  .nav-buttons button{
+    background:var(--olive-deep); color:#fff; border:none; padding:10px 18px;
+    border-radius:0; font-size:0.88rem; cursor:pointer; font-weight:700;
+  }
+  .nav-buttons button:disabled{ opacity:0.35; cursor:default; }
+  .nav-buttons button:hover:not(:disabled){ background:var(--orange-deep); }
+
+  .learning-note{max-width:1200px; margin:0 auto; padding:22px 6vw; background:var(--olive-deep); color:white; font-family:"DM Sans","Segoe UI",sans-serif; font-size:.88rem; line-height:1.6;}
+  .learning-note strong{color:var(--orange);}
+  footer{display:flex; justify-content:space-between; gap:24px; flex-wrap:wrap; padding:36px 6vw; background:#0D222B; color:rgba(255,255,255,.75); font-family:"DM Sans","Segoe UI",sans-serif; font-size:0.8rem;}
+  .legal-links{display:flex; gap:22px; flex-wrap:wrap;}
+  .legal-links a:hover{color:var(--orange);}
+  @media (max-width:600px){
+    .brand-mark{width:72px;height:72px;}
+    .brand-name,.brand-tag{display:none;}
+    .course-back{font-size:.78rem;}
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="brand-row">
+    <div class="brand">
+      <a class="brand-mark" href="index-de.html" aria-label="Berlinagile Startseite">
+        <img src="assets/berlinagile-logo-256.png" alt="Berlinagile" width="256" height="256">
+      </a>
+      <div>
+        <div class="brand-name">berlinagile</div>
+        <div class="brand-tag">Find your Rhythm</div>
+      </div>
+    </div>
+    <a class="course-back" href="lernmaterial-de.html">Zurück zum Lernmaterial</a>
+  </div>
+  <h1 class="site-title">Deutsch für Prüfung und Beruf</h1>
+  <p class="site-sub">40 Lektionen in vier Etappen: B1, B2 und C1 zur Prüfungsvorbereitung, ergänzt durch zehn Lektionen für Bewerbung, Vorstellungsgespräch und Jobsuche auf Deutsch. Jede Lektion hat ihren eigenen Takt.</p>
+  <div class="rhythm-strip" aria-hidden="true">
+    <span style="animation-delay:0s"></span><span style="animation-delay:0.2s"></span><span style="animation-delay:0.4s"></span>
+    <span style="animation-delay:0.6s"></span><span style="animation-delay:0.8s"></span><span style="animation-delay:1.0s"></span>
+    <span style="animation-delay:1.2s"></span><span style="animation-delay:1.4s"></span><span style="animation-delay:1.6s"></span>
+    <span style="animation-delay:1.8s"></span><span style="animation-delay:2.0s"></span><span style="animation-delay:2.2s"></span>
+  </div>
+</header>
+
+<aside class="learning-note"><strong>Unabhängiger Lernpfad:</strong> Berlinagile ist weder mit dem Goethe-Institut noch mit telc verbunden. Prüfungsaufbau, Zeiten und Bewertung können sich je nach Anbieter ändern. Prüfen Sie deshalb vor der Anmeldung immer die aktuellen offiziellen Angaben Ihres gewählten Prüfungsanbieters.</aside>
+
+<div class="layout">
+  <nav class="tracks" id="tracks"></nav>
+  <main>
+    <div class="crumb" id="crumb">Etappe</div>
+    <div class="lesson-card" id="lessonCard"></div>
+    <div class="nav-buttons">
+      <button id="prevBtn" class="sans">← Vorherige Lektion</button>
+      <button id="nextBtn" class="sans">Nächste Lektion →</button>
+    </div>
+  </main>
+</div>
+
+<footer><span>&copy; 2026 Berlinagile · Deutsch für Prüfung und Beruf</span><nav class="legal-links" aria-label="Rechtliche Hinweise"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a><a href="mailto:crowupp.group@gmail.com">E-Mail</a></nav></footer>
+
+<script>
+const DATA = {
+  B1: {
+    label: "B1 · Alltag & Prüfung",
+    meta: "10 Lektionen · B1-Orientierung",
+    lessons: [
+      {
+        title: "B1 im Überblick: Prüfungsformat und Strategie",
+        goal: "Sie kennen typische Prüfungsbereiche auf B1-Niveau und entwickeln einen Lernplan für Ihren gewählten Anbieter.",
+        vocab: [["die Teilprüfung","exam section"],["die Bearbeitungszeit","time allowed"],["die Punktzahl","score"],["bestehen","to pass"],["durchfallen","to fail"],["die Aufgabenstellung","task instructions"]],
+        focus: "Prüfungen auf B1-Niveau testen typischerweise Lesen, Hören, Schreiben und Sprechen. Aufbau, Dauer, Gewichtung und Bestehensregeln unterscheiden sich jedoch je nach Anbieter und Prüfungszentrum. Prüfen Sie die aktuellen offiziellen Vorgaben und planen Sie pro Woche feste Zeiten für jede Fertigkeit ein.",
+        example: "„Ich übe jeden Montag Hören, jeden Mittwoch Schreiben und am Wochenende sprechen wir zu zweit.“",
+        exercise: "Schreibe deinen persönlichen Wochenplan: Welcher Tag gehört zu welcher Fertigkeit? Notiere auch ein realistisches Prüfungsdatum.",
+        tip: "Informieren Sie sich früh über Termine und Anmeldefristen. Ein realistisches Zieldatum kann Ihre Lernplanung unterstützen."
+      },
+      {
+        title: "Perfekt und Präteritum im Alltag",
+        goal: "Du erzählst korrekt über Vergangenes, mündlich mit Perfekt, schriftlich oft mit Präteritum bei sein/haben/Modalverben.",
+        vocab: [["haben/sein + Partizip II","auxiliary + past participle"],["das Ereignis","the event"],["neulich","recently"],["damals","back then"],["der Lebenslauf","CV / résumé"]],
+        focus: "Im gesprochenen Deutsch benutzt man fast immer das Perfekt: „Ich habe gearbeitet.“ Beim Schreiben, besonders bei sein, haben und Modalverben, ist das Präteritum üblicher: „Ich war müde“, „Ich musste früh aufstehen“. Achte auf die Position des Partizips: es steht am Satzende.",
+        example: "„Letztes Jahr habe ich meinen Bachelor gemacht, danach bin ich nach Berlin gezogen.“",
+        exercise: "Schreibe drei Sätze über deinen letzten Job im Perfekt, dann forme sie testweise ins Präteritum um.",
+        tip: "In der mündlichen Prüfung reicht das Perfekt völlig aus, du musst das Präteritum aktiv nicht sprechen können."
+      },
+      {
+        title: "Nebensätze: weil, dass, wenn",
+        goal: "Du bildest Nebensätze korrekt mit Verb am Ende und verbindest Gründe, Aussagen und Bedingungen.",
+        vocab: [["die Konjunktion","conjunction"],["der Nebensatz","subordinate clause"],["begründen","to justify"],["die Bedingung","condition"],["falls","in case"]],
+        focus: "Bei weil, dass und wenn steht das konjugierte Verb am Ende des Nebensatzes. Weil begründet, dass berichtet eine Aussage, wenn beschreibt eine Bedingung oder wiederholte Zeit. Der Hauptsatz kann vor oder nach dem Nebensatz stehen.",
+        example: "„Ich lerne Deutsch, weil ich in Deutschland arbeiten möchte.“ / „Wenn ich Zeit habe, übe ich Grammatik.“",
+        exercise: "Verbinde: (1) Ich bin müde. Ich habe schlecht geschlafen. (mit weil) (2) Er sagt. Er kommt morgen. (mit dass)",
+        tip: "Eine korrekte Verbposition macht Ihren Text leichter verständlich und ist für Aufgaben auf B1-Niveau wichtig."
+      },
+      {
+        title: "Wortschatz: Alltag und Familie",
+        goal: "Du beherrschst zentralen Wortschatz zu Alltag, Wohnen und Familie für Lese- und Hörverstehen.",
+        vocab: [["der Umzug","the move (house)"],["die Nachbarschaft","neighbourhood"],["sich kümmern um","to take care of"],["der Haushalt","household"],["die Verabredung","appointment/date"]],
+        focus: "B1-Texte handeln oft von Alltagssituationen: Wohnungssuche, Familienplanung, Termine. Baue dir thematische Wortlisten statt einzelner Vokabeln, das verbessert dein Leseverständnis deutlich.",
+        example: "„Nach dem Umzug musste ich mich erst an die neue Nachbarschaft gewöhnen.“",
+        exercise: "Schreibe fünf Sätze über deinen eigenen Alltag mit mindestens drei der neuen Wörter.",
+        tip: "Lerne Wörter immer mit Artikel und Pluralform, das spart später Zeit beim Schreiben."
+      },
+      {
+        title: "Modalverben im Perfekt",
+        goal: "Du bildest korrekt Sätze mit Modalverben in der Vergangenheit, mündlich und schriftlich.",
+        vocab: [["müssen","must"],["dürfen","to be allowed to"],["der Ersatzinfinitiv","substitute infinitive"],["die Erlaubnis","permission"]],
+        focus: "Modalverben bilden das Perfekt meist mit dem sogenannten Ersatzinfinitiv: „Ich habe arbeiten müssen“ statt „gemusst“. Im gesprochenen Deutsch ist das Präteritum jedoch üblicher und einfacher: „Ich musste arbeiten.“",
+        example: "„Ich konnte gestern nicht kommen, weil ich arbeiten musste.“",
+        exercise: "Formuliere drei Ausreden für einen verpassten Termin, jeweils mit einem anderen Modalverb im Präteritum.",
+        tip: "Für die mündliche Prüfung: nutze bei Modalverben immer das Präteritum, es klingt natürlicher als der Ersatzinfinitiv."
+      },
+      {
+        title: "Eine formelle E-Mail schreiben",
+        goal: "Du strukturierst eine formelle E-Mail mit Anrede, klaren Inhaltspunkten und Schluss.",
+        vocab: [["die Anrede","salutation"],["der Betreff","subject line"],["mitteilen","to inform"],["die Rückmeldung","reply/feedback"],["mit freundlichen Grüßen","kind regards"]],
+        focus: "Ein häufiger Aufgabentyp verlangt mehrere Inhaltspunkte aus einer Aufgabenstellung. Struktur: Anrede, Einleitung mit dem Grund des Schreibens, Hauptteil mit einem Absatz je Inhaltspunkt und Schluss mit Grußformel. Umfang und Bewertung richten sich nach den aktuellen Vorgaben Ihres Prüfungsanbieters.",
+        example: "„Sehr geehrte Damen und Herren, hiermit möchte ich Ihnen mitteilen, dass...“",
+        exercise: "Schreibe eine kurze E-Mail an eine Vermieterin: (1) Grund der Anfrage, (2) eine Frage zur Wohnung, (3) Terminvorschlag.",
+        tip: "Prüfen Sie beim Üben, ob Sie alle Inhaltspunkte bearbeitet und den geforderten Umfang eingehalten haben."
+      },
+      {
+        title: "Hörverstehen: Ansagen und Durchsagen",
+        goal: "Du verstehst kurze Durchsagen (Bahnhof, Radio, Anrufbeantworter) und filterst gezielt Kerninformationen heraus.",
+        vocab: [["die Durchsage","announcement"],["die Verspätung","delay"],["der Anrufbeantworter","answering machine"],["die Ansage","recorded message"]],
+        focus: "Bei Durchsagen kommen die wichtigsten Informationen oft am Anfang oder werden wiederholt. Lies die Aufgaben immer vor dem Hören, damit du weißt, worauf du achten musst: Zeit, Ort oder Grund.",
+        example: "„Achtung an Gleis 4: Der Zug nach Hamburg hat heute 15 Minuten Verspätung.“",
+        exercise: "Notiere beim nächsten öffentlichen Durchsage-Hören (Bahn, Bus) drei konkrete Informationen: Ort, Zeit, Grund.",
+        tip: "Beim ersten Hördurchgang: nur zuhören und grob verstehen. Details erst beim zweiten Durchgang notieren."
+      },
+      {
+        title: "Vergleiche: Komparativ und Superlativ",
+        goal: "Du vergleichst Personen, Orte und Dinge korrekt in Alltagsgesprächen.",
+        vocab: [["vergleichen","to compare"],["günstiger","cheaper"],["am besten","the best"],["im Vergleich zu","compared to"]],
+        focus: "Komparativ: Adjektiv + er (billiger). Superlativ: am + Adjektiv + sten (am billigsten). Einsilbige Adjektive mit a, o, u bekommen oft einen Umlaut: groß → größer → am größten.",
+        example: "„Berlin ist größer als Freiburg, aber München ist am teuersten.“",
+        exercise: "Vergleiche drei deutsche Städte, die du kennst, in je einem Satz mit Komparativ oder Superlativ.",
+        tip: "Unregelmäßige Formen (gut-besser-am besten, viel-mehr-am meisten) gehören zum aktiven B1-Wortschatz, lerne sie auswendig."
+      },
+      {
+        title: "Meinung äußern und begründen",
+        goal: "Du präsentierst eine eigene Meinung zu einem Alltagsthema und begründest sie mit einem einfachen Argument.",
+        vocab: [["meiner Meinung nach","in my opinion"],["ich finde, dass...","I think that..."],["einerseits / andererseits","on one hand / on the other"],["ein Vorteil / Nachteil","an advantage / disadvantage"]],
+        focus: "Bei einer typischen Sprechaufgabe präsentierst du kurz ein Thema und äußerst deine Meinung. Struktur: These nennen, ein Argument, ein Beispiel und ein kurzer Schluss. Prüfen Sie das konkrete Format bei Ihrem Anbieter.",
+        example: "„Meiner Meinung nach ist Homeoffice praktisch, weil man Zeit spart. Zum Beispiel muss ich nicht mehr pendeln.“",
+        exercise: "Wähle ein Thema (z. B. Social Media, Homeoffice, Sport) und sprich 60 Sekunden frei, nutze die Redemittel oben.",
+        tip: "Üben Sie laut und nicht nur im Kopf. So trainieren Sie Verständlichkeit und einen flüssigen Gesprächsrhythmus."
+      },
+      {
+        title: "Mündliche Prüfung: Gemeinsam etwas planen",
+        goal: "Du führst den dritten Teil der mündlichen Prüfung: gemeinsam mit einem Partner etwas organisieren.",
+        vocab: [["vorschlagen","to suggest"],["einverstanden sein","to agree"],["das kommt nicht in Frage","that's out of the question"],["ich schlage vor, dass...","I suggest that..."]],
+        focus: "In dieser Übung plant ihr zu zweit etwas, zum Beispiel eine Feier. Wichtig ist Interaktion: Vorschläge machen, zustimmen oder höflich widersprechen und eine gemeinsame Entscheidung treffen.",
+        example: "„Ich schlage vor, dass wir die Feier im Park machen. Was hältst du davon?“ – „Gute Idee, aber bei Regen brauchen wir einen Plan B.“",
+        exercise: "Übe mit einer Lernpartnerin: plant gemeinsam einen Ausflug, jede Person macht mindestens zwei Vorschläge.",
+        tip: "Rede nicht nur selbst, reagiere aktiv auf die Vorschläge deines Partners, das zeigt echte Gesprächsfähigkeit."
+      }
+    ]
+  },
+  B2: {
+    label: "B2 · Argumentation & Beruf",
+    meta: "10 Lektionen · B2-Orientierung",
+    lessons: [
+      {
+        title: "B2 im Überblick: Prüfungsformat und Anforderungen",
+        goal: "Du kennst typische Anforderungen auf B2-Niveau und den Unterschied zu B1: mehr Abstraktion und mehr Argumentation.",
+        vocab: [["das Anforderungsniveau","level of requirement"],["die Textsorte","text type"],["abstrakt","abstract"],["die Stellungnahme","statement/position paper"]],
+        focus: "Aufgaben auf B2-Niveau verlangen selbstständige Meinungsbildung zu komplexeren, teils abstrakten Themen, etwa Arbeit, Gesellschaft oder Technik. Je nach Anbieter können längere Sachtexte, strukturierte Schreibaufgaben und begründete Positionen vorkommen.",
+        example: "„Auf B2 sollst du nicht nur berichten, sondern eigene Positionen begründet vertreten.“",
+        exercise: "Lies eine kurze Zeitungsmeldung (z. B. tagesschau.de) und formuliere in zwei Sätzen deine eigene Position dazu.",
+        tip: "Beginne jetzt mit regelmäßigem Zeitunglesen, das trainiert genau den B2-typischen Wortschatz."
+      },
+      {
+        title: "Konjunktiv II: Höflichkeit und irreale Bedingungen",
+        goal: "Du benutzt Konjunktiv II für höfliche Bitten, Wünsche und hypothetische Situationen.",
+        vocab: [["würde + Infinitiv","would + infinitive"],["hätte / wäre","would have / would be"],["an deiner Stelle","in your place"],["die Höflichkeitsform","polite form"]],
+        focus: "Konjunktiv II wird gebildet mit würde + Infinitiv (Verkaufen: würde verkaufen) oder den unregelmäßigen Formen von haben, sein, können, müssen. Typisch für Bewerbungssprache: „Ich würde mich freuen...“, „Ich wäre in der Lage...“.",
+        example: "„Wenn ich mehr Zeit hätte, würde ich noch ein Praktikum machen.“",
+        exercise: "Schreibe drei höfliche Bewerbungssätze mit würde, hätte oder wäre.",
+        tip: "In formellen E-Mails wirkt Konjunktiv II deutlich professioneller als direkte Aussagen mit dem Präsens."
+      },
+      {
+        title: "Passiv und Zustandspassiv",
+        goal: "Du erkennst und bildest Passivsätze, besonders relevant für Berichte und Stellenbeschreibungen.",
+        vocab: [["werden + Partizip II","to become + past participle (passive)"],["der Vorgang","process"],["der Zustand","state/condition"],["durchgeführt werden","to be carried out"]],
+        focus: "Vorgangspassiv (werden + Partizip II) beschreibt einen Prozess: „Der Bericht wird geschrieben.“ Zustandspassiv (sein + Partizip II) beschreibt das Ergebnis: „Der Bericht ist geschrieben.“ In Stellenanzeigen und Prozessbeschreibungen ist das Passiv sehr häufig.",
+        example: "„Die Anforderungen werden im ersten Sprint definiert, danach wird das Projekt umgesetzt.“",
+        exercise: "Beschreibe einen Arbeitsprozess aus deinem Job in drei Passivsätzen.",
+        tip: "Im agilen Kontext ist das Passiv typisch für Prozessbeschreibungen, das lohnt sich besonders für IT-Vokabular."
+      },
+      {
+        title: "Nominalisierung: Verben zu Nomen",
+        goal: "Du formst Verben in Nomen um, ein zentrales Merkmal formeller B2/C1-Texte.",
+        vocab: [["die Umsetzung","implementation"],["die Entscheidung","decision"],["die Durchführung","execution"],["die Erhöhung","increase"]],
+        focus: "Formelle Texte, Berichte und Stellungnahmen nutzen oft Nominalstil statt Verbstil: „nachdem entschieden wurde“ wird zu „nach der Entscheidung“. Das macht Texte kompakter, klingt aber auch distanzierter.",
+        example: "Verbstil: „Wir haben entschieden, das Projekt zu verschieben.“ Nominalstil: „Die Entscheidung zur Verschiebung des Projekts...“",
+        exercise: "Forme drei Verbsätze aus deinem Berufsalltag in Nominalstil um.",
+        tip: "Für die mündliche Prüfung: übertreibe den Nominalstil nicht, gesprochenes Deutsch bleibt eher verbal."
+      },
+      {
+        title: "Konnektoren: obwohl, trotzdem, dennoch",
+        goal: "Du drückst Gegensätze differenziert aus, wichtig für Argumentation in Schreiben und Sprechen.",
+        vocab: [["obwohl","although"],["trotzdem","nevertheless"],["dennoch","yet/still"],["im Gegensatz dazu","in contrast to that"],["allerdings","however"]],
+        focus: "Obwohl leitet einen Nebensatz ein (Verb am Ende). Trotzdem und dennoch sind Adverbien im Hauptsatz und stehen meist an Position eins, gefolgt vom Verb. Diese Unterscheidung ist ein häufiger Prüfungsfehler.",
+        example: "„Obwohl das Projekt Verzögerungen hatte, wurde das Ziel dennoch erreicht.“",
+        exercise: "Schreibe zwei Sätze mit obwohl und zwei mit trotzdem zu einem Thema deiner Wahl.",
+        tip: "Achte auf die Verbposition: nach trotzdem/dennoch steht das Verb direkt danach, nicht am Satzende."
+      },
+      {
+        title: "Textsorte: eine Stellungnahme schreiben",
+        goal: "Du strukturierst einen argumentativen Text mit Einleitung, Pro- und Contra-Argumenten und eigener Meinung.",
+        vocab: [["das Argument","argument"],["die Gegenposition","counter-position"],["zusammenfassend","in summary"],["ich bin der Ansicht, dass...","I am of the view that..."]],
+        focus: "Aufbau: Einleitung mit Thema, zwei bis drei Argumente dafür, ein bis zwei Argumente dagegen, eigene begründete Meinung im Schluss. Nutze Konnektoren, um Argumente logisch zu verbinden.",
+        example: "„Einerseits ermöglicht Homeoffice mehr Flexibilität, andererseits fehlt oft der direkte Austausch im Team.“",
+        exercise: "Schreibe eine Stellungnahme zum Thema „Vier-Tage-Woche“ mit klarer Struktur. Nutze den Umfang, den dein gewähltes Übungsformat vorgibt.",
+        tip: "Achten Sie auf einen zusammenhängenden Text und nutzen Sie bewusst Konnektoren zwischen den Absätzen."
+      },
+      {
+        title: "Leseverstehen: Hauptaussagen erkennen",
+        goal: "Du erfasst schnell die Kernaussage längerer Zeitungs- und Sachtexte, ohne jedes Wort zu verstehen.",
+        vocab: [["überfliegen","to skim"],["die Kernaussage","main point"],["der Absatz","paragraph"],["sinngemäß","in essence/paraphrased"]],
+        focus: "B2-Texte sind länger und enthalten unbekannte Wörter. Strategie: zuerst überfliegen (Titel, erster und letzter Satz jedes Absatzes), dann gezielt die Aufgaben lesen, danach den Text detailliert bearbeiten.",
+        example: "„Auch ohne jedes Fachwort verstehst du aus Titel und erstem Satz meist das Thema des Absatzes.“",
+        exercise: "Wähle einen Artikel aus einer deutschen Zeitung, überfliege ihn in 60 Sekunden und schreibe die Kernaussage in einem Satz.",
+        tip: "Rate unbekannte Wörter aus dem Kontext, statt jedes Wort nachzuschlagen, das trainiert echte Prüfungsstrategie."
+      },
+      {
+        title: "Indirekte Rede",
+        goal: "Du gibst Aussagen anderer Personen wieder, mündlich mit dass-Sätzen, schriftlich auch mit Konjunktiv I.",
+        vocab: [["berichten","to report"],["laut Aussage von...","according to..."],["angeblich","allegedly"],["mitteilen","to state/inform"]],
+        focus: "Im Alltag reicht meist: „Er hat gesagt, dass er krank ist.“ In formelleren Texten (Nachrichten, Berichte) wird oft Konjunktiv I verwendet: „Er sei krank.“ Für B2 reicht das passive Erkennen von Konjunktiv I.",
+        example: "„Der Sprecher sagte, die Zahlen seien im letzten Quartal gestiegen.“",
+        exercise: "Gib eine Aussage eines Kollegen aus deinem Job wieder, einmal mit dass-Satz, einmal (zur Übung) mit Konjunktiv I.",
+        tip: "In der Prüfung reicht der dass-Satz völlig, Konjunktiv I ist eher passives Verstehen als aktive Pflicht."
+      },
+      {
+        title: "Diskussion und Argumentation (Sprechen)",
+        goal: "Du diskutierst ein kontroverses Thema, reagierst auf Gegenargumente und bleibst dabei höflich.",
+        vocab: [["ich stimme zu, aber...","I agree, but..."],["das sehe ich anders","I see it differently"],["ein guter Punkt, allerdings...","a good point, however..."],["überzeugend","convincing"]],
+        focus: "B2-Diskussionen erwarten, dass du nicht nur deine Meinung sagst, sondern auf die Argumente des Gesprächspartners eingehst. Zeige das aktiv durch Formulierungen wie „das sehe ich anders“ oder „ein guter Punkt, allerdings...“.",
+        example: "„Ich stimme dir teilweise zu, allerdings finde ich, dass die Kosten dabei unterschätzt werden.“",
+        exercise: "Diskutiere mit einer Lernpartnerin ein Thema wie „Sollte Homeoffice zur Pflicht werden?“, jede Seite nutzt mindestens zwei Redemittel oben.",
+        tip: "Unterbrich nicht, aber reagiere aktiv auf Argumente, statt nur auf deinen nächsten eigenen Beitrag zu warten."
+      },
+      {
+        title: "Eine kurze Präsentation halten",
+        goal: "Du strukturierst und hältst eine kurze Präsentation zu einem vorgegebenen Thema.",
+        vocab: [["die Gliederung","structure/outline"],["zunächst / anschließend / abschließend","first / then / finally"],["ein Beispiel dafür ist...","an example of this is..."],["zusammenfassend lässt sich sagen...","in summary, it can be said..."]],
+        focus: "Struktur: kurze Einleitung mit Thema, zwei bis drei Hauptpunkte mit Beispielen, Zusammenfassung mit eigener Meinung. Nutze Signalwörter wie zunächst, anschließend, abschließend als Gliederungshilfen.",
+        example: "„Zunächst möchte ich auf die Vorteile eingehen, anschließend spreche ich über mögliche Herausforderungen.“",
+        exercise: "Bereite eine zweiminütige Präsentation zum Thema „Digitalisierung am Arbeitsplatz“ vor und halte sie laut.",
+        tip: "Üben Sie mit Zeitmessung und richten Sie die Redezeit nach den aktuellen Vorgaben Ihres Prüfungsanbieters aus."
+      }
+    ]
+  },
+  C1: {
+    label: "C1 · Präzision & Nuance",
+    meta: "10 Lektionen · C1-Orientierung",
+    lessons: [
+      {
+        title: "C1 im Überblick: Anforderungen und Erwartungshaltung",
+        goal: "Du verstehst, dass C1 nicht mehr primär Grammatik prüft, sondern Präzision, Stilsicherheit und Textkohärenz.",
+        vocab: [["die Stilsicherheit","stylistic confidence"],["die Nuance","nuance"],["das Register","register (formal/informal)"],["die Kohärenz","coherence"]],
+        focus: "Auf C1 wird erwartet, dass du Register angemessen wählst, komplexe Zusammenhänge klar strukturierst und auch implizite Bedeutungen erfassen kannst, etwa Ironie oder Andeutungen in Hörtexten.",
+        example: "„C1 bedeutet: du sprichst nicht nur korrekt, sondern angemessen für die jeweilige Situation.“",
+        exercise: "Vergleiche denselben Sachverhalt in zwei Registern: einmal locker (an einen Freund), einmal formell (an eine Behörde).",
+        tip: "Lies ab jetzt bewusst unterschiedliche Textsorten: Leitartikel, Fachartikel, Blogposts, um ein Gefühl für Register zu entwickeln."
+      },
+      {
+        title: "Nominalstil und Wissenschaftssprache",
+        goal: "Du liest und produzierst komplexen Nominalstil, wie er in Fachtexten und Berichten üblich ist.",
+        vocab: [["die Erkenntnis","insight/finding"],["im Hinblick auf","with regard to"],["die Fragestellung","research question"],["diesbezüglich","in this regard"]],
+        focus: "C1-Texte nutzen dichten Nominalstil mit Präpositionalgruppen wie im Hinblick auf, in Bezug auf, im Rahmen von. Diese Wendungen wirken formell und werden in Berichten, Studien und Stellungnahmen erwartet.",
+        example: "„Im Hinblick auf die steigende Nachfrage wurde die Produktionskapazität im vergangenen Quartal erhöht.“",
+        exercise: "Formuliere zwei Sätze aus deinem Berufsfeld mit im Hinblick auf und im Rahmen von.",
+        tip: "Übertreibe es nicht, in mündlicher Prüfung wirkt zu viel Nominalstil steif, dosiere ihn bewusst."
+      },
+      {
+        title: "Komplexe Satzverbindungen: Partizipialkonstruktionen",
+        goal: "Du verstehst und bildest Partizipialkonstruktionen, ein typisches Merkmal anspruchsvoller Schriftsprache.",
+        vocab: [["das Partizip I","present participle"],["das Partizip II","past participle"],["die Konstruktion","construction"],["verkürzt","shortened/condensed"]],
+        focus: "Partizipialkonstruktionen verkürzen Nebensätze: „Der Bericht, der im März verfasst wurde“ wird zu „Der im März verfasste Bericht“. Sie sind typisch für Zeitungs- und Fachtexte und erhöhen die Informationsdichte.",
+        example: "„Die vom Team entwickelte Lösung überzeugte die Stakeholder auf Anhieb.“",
+        exercise: "Verkürze diesen Satz mit einer Partizipialkonstruktion: „Das Projekt, das im Januar gestartet wurde, ist inzwischen abgeschlossen.“",
+        tip: "Erkenne diese Konstruktionen zunächst passiv beim Lesen, aktives Bilden kommt mit Übung von selbst."
+      },
+      {
+        title: "Idiomatik und feste Wendungen",
+        goal: "Du erkennst und benutzt gängige Redewendungen, um natürlicher und weniger lehrbuchhaft zu klingen.",
+        vocab: [["den Nagel auf den Kopf treffen","to hit the nail on the head"],["ins Wasser fallen","to fall through (plans)"],["auf der sicheren Seite sein","to be on the safe side"],["sich etwas zu Herzen nehmen","to take something to heart"]],
+        focus: "Idiome sind auf C1 relevant für Hörverstehen und wirken im Sprechen sehr natürlich, sollten aber gezielt und nicht überladen eingesetzt werden. Wichtig ist vor allem das Erkennen in authentischen Texten und Gesprächen.",
+        example: "„Mit diesem Vorschlag hast du wirklich den Nagel auf den Kopf getroffen.“",
+        exercise: "Suche zwei weitere Redewendungen und schreibe je einen Beispielsatz aus deinem Alltag.",
+        tip: "Ein bis zwei treffend platzierte Redewendungen im mündlichen Teil wirken oft überzeugender als viele auf einmal."
+      },
+      {
+        title: "Textsorte: Kommentar und Erörterung",
+        goal: "Du verfasst einen pointierten, argumentativ klar strukturierten Kommentar zu einem gesellschaftlichen Thema.",
+        vocab: [["der Kommentar","opinion piece"],["die These","thesis"],["die Erörterung","discussion essay"],["kontrovers","controversial"]],
+        focus: "Ein Kommentar vertritt klar eine These und untermauert sie mit Argumenten, im Unterschied zur ausgewogeneren Stellungnahme auf B2. Struktur: pointierte Einleitung, Argumentation, klare Schlussthese.",
+        example: "„Es ist an der Zeit, Homeoffice nicht länger als Ausnahme, sondern als Standard zu betrachten.“",
+        exercise: "Schreibe die Einleitung eines Kommentars (3-4 Sätze) zu einem aktuellen Thema deiner Wahl mit klarer These.",
+        tip: "Ein starker erster Satz entscheidet oft über den Gesamteindruck, investiere hier besondere Sorgfalt."
+      },
+      {
+        title: "Hörverstehen: Vorträge und Interviews",
+        goal: "Du folgst längeren, komplexen Hörtexten wie Vorträgen, Podcasts und Interviews und erkennst implizite Standpunkte.",
+        vocab: [["der Standpunkt","standpoint"],["implizit","implicit"],["die Argumentationslinie","line of argument"],["zwischen den Zeilen","between the lines"]],
+        focus: "Auf C1 wird oft nicht explizit gesagt, was jemand meint, du musst es aus Tonfall, Wortwahl und Kontext erschließen. Übe mit authentischen deutschen Podcasts oder Interviews statt nur mit Prüfungsmaterial.",
+        example: "„Der Referent sagt zwar nicht direkt, dass er skeptisch ist, aber seine Wortwahl deutet stark darauf hin.“",
+        exercise: "Höre ein deutsches Interview (z. B. Deutschlandfunk) und notiere, ob der Sprecher eher zustimmend oder kritisch klingt, und warum.",
+        tip: "Gewöhne dir echtes, ungekürztes Sprechtempo an, C1-Hörtexte werden nicht künstlich verlangsamt."
+      },
+      {
+        title: "Konjunktiv I: indirekte Rede in formellen Texten",
+        goal: "Du erkennst und interpretierst Konjunktiv I in Nachrichtentexten und formellen Berichten korrekt.",
+        vocab: [["er sei","he is said to be"],["sie habe","she is said to have"],["die Quelle","source"],["distanzierend","distancing"]],
+        focus: "Konjunktiv I markiert, dass eine Aussage von einer anderen Person stammt, ohne dass der Sprecher sie bewertet: „Der Minister sagte, die Reform sei notwendig.“ Das ist typisch für Nachrichtensprache und journalistische Neutralität.",
+        example: "„Die Sprecherin erklärte, man werde die Entscheidung in den kommenden Wochen bekannt geben.“",
+        exercise: "Lies eine kurze Nachrichtenmeldung und markiere alle Verben im Konjunktiv I.",
+        tip: "Aktives Bilden ist auf C1 selten gefordert, entscheidend ist das sichere Erkennen beim Lesen und Hören."
+      },
+      {
+        title: "Eine Textzusammenfassung schreiben",
+        goal: "Du fasst einen komplexen Text präzise, neutral und in eigenen Worten zusammen.",
+        vocab: [["zusammenfassen","to summarize"],["die Kernthese","central thesis"],["neutral wiedergeben","to render neutrally"],["die Redundanz vermeiden","to avoid redundancy"]],
+        focus: "Eine gute Zusammenfassung nennt die Kernthese, die wichtigsten Argumente und lässt Details sowie die eigene Meinung weg. Nutze eigene Formulierungen statt Textstellen zu kopieren, das zeigt echtes Verständnis.",
+        example: "„Der Artikel argumentiert, dass flexible Arbeitsmodelle langfristig die Produktivität steigern, unter Verweis auf drei aktuelle Studien.“",
+        exercise: "Fasse einen Artikel (ca. 400 Wörter) in maximal 100 eigenen Worten zusammen.",
+        tip: "Schreibe die Zusammenfassung ohne Blick auf den Originaltext, das verhindert unbewusstes Abschreiben."
+      },
+      {
+        title: "Debatte und Gegenargumente",
+        goal: "Du führst eine strukturierte Debatte, entkräftest Gegenargumente sachlich und bleibst in der Rolle.",
+        vocab: [["entkräften","to refute"],["das Gegenargument","counter-argument"],["die Position vertreten","to hold a position"],["sachlich bleiben","to remain objective"]],
+        focus: "In einer Debatte hörst du dem Gegenargument genau zu, erkennst seinen Kern und reagierst gezielt, statt nur die eigene Meinung zu wiederholen. Formulierungen wie „das Argument greift zu kurz, weil...“ helfen dabei.",
+        example: "„Das Argument greift meiner Ansicht nach zu kurz, weil es die langfristigen Kosten außer Acht lässt.“",
+        exercise: "Debattiere mit einer Partnerin zu einem kontroversen Thema und entkräfte mindestens ein konkretes Gegenargument.",
+        tip: "Bleibe auch bei starkem Widerspruch höflich, Ton und Register werden auf C1 explizit bewertet."
+      },
+      {
+        title: "Mündliche Prüfung: Vortrag und Diskussion",
+        goal: "Du hältst einen strukturierten Vortrag zu einem komplexen Thema und verteidigst deine Position im Anschluss.",
+        vocab: [["die These vertreten","to defend a thesis"],["Rückfragen beantworten","to answer follow-up questions"],["der rote Faden","the throughline/coherent thread"],["auf den Punkt kommen","to get to the point"]],
+        focus: "Diese C1-Übung kombiniert einen kurzen Vortrag mit anschließenden Rückfragen. Wichtig sind ein klarer roter Faden und die Fähigkeit, spontan und präzise auf Nachfragen zu reagieren. Das konkrete Prüfungsformat hängt vom Anbieter ab.",
+        example: "„Zusammenfassend lässt sich sagen, dass... Gerne beantworte ich dazu offene Fragen.“",
+        exercise: "Halte einen dreiminütigen Vortrag zu einem Fachthema aus deinem Beruf und lass dir spontan zwei Rückfragen stellen.",
+        tip: "Plane bewusst eine kurze Pause vor der Antwort auf Rückfragen ein, das wirkt souveräner als hastiges Antworten."
+      }
+    ]
+  },
+  JOBS: {
+    label: "Jobsuche & Vorstellungsgespräch",
+    meta: "10 Bonus-Lektionen · Bewerbung auf Deutsch",
+    lessons: [
+      {
+        title: "Stellenanzeigen lesen und verstehen",
+        goal: "Du entschlüsselst typische Formulierungen und Abkürzungen in deutschen Stellenanzeigen.",
+        vocab: [["die Anforderungen","requirements"],["wünschenswert","desirable (not mandatory)"],["Berufserfahrung","professional experience"],["die Festanstellung","permanent position"],["befristet","fixed-term"]],
+        focus: "Deutsche Stellenanzeigen unterscheiden oft zwischen „Anforderungen“ (Muss-Kriterien) und „wünschenswert“ (Kann-Kriterien). Bewirb dich auch, wenn du nicht alle wünschenswerten Punkte erfüllst, das ist üblich und erwartet.",
+        example: "„Erfahrung mit Scrum ist wünschenswert, keine Voraussetzung“ bedeutet: es hilft, ist aber kein Ausschlusskriterium.",
+        exercise: "Analysiere eine echte Stellenanzeige: markiere Muss-Kriterien in einer Farbe, Kann-Kriterien in einer anderen.",
+        tip: "Achte besonders auf befristet vs. unbefristet und auf den genannten Standort, das sind häufige Missverständnisse."
+      },
+      {
+        title: "Der deutsche Lebenslauf: Aufbau und Sprache",
+        goal: "Du formulierst einen tabellarischen Lebenslauf im deutschen Standard, präzise und antichronologisch.",
+        vocab: [["tabellarisch","in table form"],["antichronologisch","reverse chronological"],["die Tätigkeit","activity/role"],["der Werdegang","career path"]],
+        focus: "Deutsche Lebensläufe sind meist tabellarisch, antichronologisch (neuester Eintrag zuerst) und mit Foto üblich, wenn auch nicht verpflichtend. Formulierungen sind stichpunktartig, oft mit Verben im Infinitiv oder Nomen statt ganzer Sätze.",
+        example: "„Koordination des Scrum-Prozesses“ statt „Ich habe den Scrum-Prozess koordiniert“.",
+        exercise: "Formuliere zwei Stationen deines Lebenslaufs im knappen, stichpunktartigen Stil um.",
+        tip: "Lücken im Lebenslauf lieber kurz und sachlich benennen (z. B. „Orientierungsphase“) statt sie unerklärt zu lassen."
+      },
+      {
+        title: "Das Anschreiben: Struktur und Formulierungen",
+        goal: "Du schreibst ein überzeugendes Anschreiben mit klarer Struktur: Einstieg, Motivation, Passung, Schluss.",
+        vocab: [["die Motivation","motivation"],["die Passung","fit"],["sich bewerben um / auf","to apply for"],["hiermit bewerbe ich mich...","hereby I am applying..."]],
+        focus: "Struktur: origineller Einstieg (kein „Hiermit bewerbe ich mich“ als erster Satz mehr, das wirkt veraltet), warum diese Firma, warum du passt (konkrete Erfahrung), Abschluss mit Gesprächswunsch. Ideal: eine DIN-A4-Seite.",
+        example: "„Als Projektkoordinatorin mit drei Jahren Erfahrung in agilen R&D-Projekten hat mich Ihre Ausschreibung sofort angesprochen.“",
+        exercise: "Schreibe einen originellen ersten Satz für ein Anschreiben zu einer Stelle deiner Wahl.",
+        tip: "Vermeide Superlative wie „der/die perfekte Kandidat/in“, konkrete Beispiele überzeugen mehr als Selbstlob."
+      },
+      {
+        title: "Bewerbungs-Vokabular: IT und Projektmanagement",
+        goal: "Du beherrschst zentrales Fachvokabular für Bewerbungen im IT- und PM-Bereich.",
+        vocab: [["die Anforderungserhebung","requirements gathering"],["das Sprint-Planning","sprint planning"],["die Stakeholder-Koordination","stakeholder coordination"],["die Qualitätssicherung","quality assurance"],["die Priorisierung","prioritization"]],
+        focus: "Fachbegriffe bleiben im Deutschen oft auf Englisch (Sprint, Backlog, Product Owner), werden aber in deutsche Satzstrukturen eingebettet. Wichtig ist eine natürliche Mischung, nicht die Übersetzung erzwungener Fachbegriffe.",
+        example: "„Ich war verantwortlich für die Priorisierung des Product Backlogs in enger Abstimmung mit dem Product Owner.“",
+        exercise: "Beschreibe eine deiner beruflichen Aufgaben in einem Satz mit mindestens zwei Fachbegriffen aus der Liste.",
+        tip: "Notiere dir eine persönliche Liste mit den zehn Fachbegriffen, die in deinem Zielberuf am häufigsten vorkommen."
+      },
+      {
+        title: "Telefoninterview: typische Fragen",
+        goal: "Du bereitest dich auf ein kurzes Telefon- oder Video-Erstgespräch vor und antwortest strukturiert.",
+        vocab: [["das Erstgespräch","initial interview"],["die Verfügbarkeit","availability"],["die Gehaltsvorstellung","salary expectation"],["der Eintrittstermin","start date"]],
+        focus: "Telefoninterviews klären meist Basisdaten: Motivation, Verfügbarkeit, grobe Gehaltsvorstellung, Aufenthaltsstatus bei Bedarf. Halte Antworten kurz und konkret, das Gespräch dauert oft nur 15 bis 20 Minuten.",
+        example: "„Ich bin ab September verfügbar und stelle mir ein Bruttojahresgehalt im Bereich von 52.000 bis 55.000 Euro vor.“",
+        exercise: "Formuliere kurze, konkrete Antworten (je 1-2 Sätze) auf: Warum diese Stelle? Ab wann verfügbar? Gehaltsvorstellung?",
+        tip: "Halte einen Stift und deinen Lebenslauf griffbereit, auch bei einem spontanen Anruf wirkt Vorbereitung souverän."
+      },
+      {
+        title: "Vorstellungsgespräch: Sich vorstellen (Stärken/Schwächen)",
+        goal: "Du stellst dich strukturiert vor und beantwortest die klassische Frage nach Stärken und Schwächen souverän.",
+        vocab: [["die Stärke","strength"],["die Schwäche","weakness"],["daran arbeiten","to work on it"],["sich selbst einschätzen","to self-assess"]],
+        focus: "Eine gute Selbstvorstellung dauert 60 bis 90 Sekunden: aktuelle Position, relevante Erfahrung, Motivation für die neue Stelle. Bei Schwächen: eine echte, aber nicht kritische Schwäche nennen und zeigen, wie du aktiv daran arbeitest.",
+        example: "„Eine Schwäche von mir ist, dass ich Aufgaben manchmal zu detailliert plane, ich arbeite aber bewusst daran, früher Prioritäten zu setzen.“",
+        exercise: "Schreibe deine 60-Sekunden-Selbstvorstellung auf und sprich sie laut mit Zeitmessung.",
+        tip: "Vermeide Klischee-Schwächen wie „ich bin Perfektionist“, das wirkt einstudiert statt ehrlich."
+      },
+      {
+        title: "Vorstellungsgespräch: Erfahrung und Kompetenzen (STAR-Methode)",
+        goal: "Du beantwortest Verhaltensfragen strukturiert mit der STAR-Methode: Situation, Task, Action, Result.",
+        vocab: [["die Situation schildern","to describe the situation"],["die Aufgabe","task"],["die Maßnahme","action/measure"],["das Ergebnis","result"]],
+        focus: "Bei Fragen wie „Erzählen Sie von einer Herausforderung...“ hilft die STAR-Struktur: kurz die Situation beschreiben, die konkrete Aufgabe nennen, deine Handlung erklären, das messbare Ergebnis zeigen.",
+        example: "„In einem R&D-Projekt gab es Verzögerungen (Situation). Meine Aufgabe war die Sprintplanung neu zu strukturieren (Task). Ich habe die Ceremonies angepasst (Action). Ergebnis: die Lieferzeit verkürzte sich um zwei Wochen (Result).“",
+        exercise: "Bereite eine eigene STAR-Antwort zu einer beruflichen Herausforderung vor, schriftlich in vier kurzen Absätzen.",
+        tip: "Bereite drei bis vier STAR-Geschichten im Voraus vor, sie lassen sich auf viele verschiedene Fragen anpassen."
+      },
+      {
+        title: "Gehaltsverhandlung auf Deutsch",
+        goal: "Du formulierst Gehaltsvorstellungen selbstbewusst, aber diplomatisch, und reagierst auf Gegenangebote.",
+        vocab: [["das Bruttogehalt","gross salary"],["die Sozialleistungen","benefits"],["verhandelbar","negotiable"],["das Angebot unterbreiten","to make an offer"]],
+        focus: "Nenne eine realistische Gehaltsspanne statt einer festen Zahl, das lässt Verhandlungsspielraum. Wenn ein Angebot unter deinen Erwartungen liegt, frage sachlich nach zusätzlichen Leistungen statt sofort abzulehnen.",
+        example: "„Ich hatte an ein Bruttojahresgehalt zwischen 52.000 und 55.000 Euro gedacht, bin aber offen für ein Gespräch über die Gesamtkonditionen.“",
+        exercise: "Formuliere eine höfliche Rückfrage für den Fall, dass das Angebot niedriger als erwartet ausfällt.",
+        tip: "Sprich Zahlen ruhig und klar aus, Unsicherheit in der Stimme wird oft als Verhandlungsschwäche wahrgenommen."
+      },
+      {
+        title: "Fragen an den Arbeitgeber stellen",
+        goal: "Du bereitest eigene, durchdachte Fragen an das Unternehmen vor, ein wichtiges Signal für echtes Interesse.",
+        vocab: [["die Einarbeitung","onboarding"],["die Teamstruktur","team structure"],["die Entwicklungsmöglichkeiten","development opportunities"],["der nächste Schritt im Prozess","next step in the process"]],
+        focus: "Am Ende des Gesprächs erwartet man eigene Fragen. Gute Themen: Teamstruktur, Einarbeitung, aktuelle Herausforderungen im Team, nächste Schritte im Bewerbungsprozess. Vermeide Fragen, die schon in der Anzeige beantwortet wurden.",
+        example: "„Wie sieht die Einarbeitung in den ersten drei Monaten konkret aus?“",
+        exercise: "Formuliere drei eigene Fragen, die du in deinem nächsten Gespräch stellen möchtest.",
+        tip: "Keine Fragen zu haben wirkt oft wie fehlendes Interesse, bereite mindestens zwei Fragen immer vor."
+      },
+      {
+        title: "Nach dem Gespräch: Follow-up und Dankes-E-Mail",
+        goal: "Du schreibst eine kurze, professionelle Dankes-E-Mail nach dem Gespräch und fragst höflich nach dem Status.",
+        vocab: [["sich bedanken für","to thank for"],["der Status der Bewerbung","application status"],["nachfassen","to follow up"],["ich freue mich auf Ihre Rückmeldung","I look forward to your reply"]],
+        focus: "Eine kurze Dankes-E-Mail innerhalb von ein bis zwei Tagen wirkt professionell, muss aber nicht zwingend. Bei ausbleibender Rückmeldung ist ein höfliches Nachfassen nach ein bis zwei Wochen völlig üblich.",
+        example: "„Vielen Dank für das angenehme Gespräch heute. Ich freue mich, mehr über die nächsten Schritte zu erfahren.“",
+        exercise: "Schreibe eine kurze Dankes-E-Mail (3-4 Sätze) nach einem fiktiven Vorstellungsgespräch.",
+        tip: "Halte die E-Mail kurz, ein bis zwei Sätze Dank genügen, lange Nachrichten wirken nach dem Gespräch oft übertrieben."
+      }
+    ]
+  }
+};
+
+const trackKeys = ["B1","B2","C1","JOBS"];
+let currentTrack = "B1";
+let currentIndex = 0;
+
+const tracksEl = document.getElementById("tracks");
+const cardEl = document.getElementById("lessonCard");
+const crumbEl = document.getElementById("crumb");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+
+function renderNav(){
+  tracksEl.innerHTML = "";
+  trackKeys.forEach(key=>{
+    const group = DATA[key];
+    const groupDiv = document.createElement("div");
+    groupDiv.className = "track-group";
+
+    const head = document.createElement("div");
+    head.setAttribute("role", "button");
+    head.tabIndex = 0;
+    head.setAttribute("aria-expanded", String(key===currentTrack));
+    head.className = "track-head" + (key===currentTrack ? " active" : "");
+    head.innerHTML = `<div><div class="track-label">${group.label}</div><div class="track-meta">${group.meta}</div></div>`;
+    const selectTrack = ()=>{ currentTrack = key; currentIndex = 0; renderNav(); renderLesson(); };
+    head.onclick = selectTrack;
+    head.onkeydown = event=>{ if(event.key === "Enter" || event.key === " "){ event.preventDefault(); selectTrack(); } };
+    groupDiv.appendChild(head);
+
+    if(key===currentTrack){
+      const ul = document.createElement("ul");
+      ul.className = "lesson-list";
+      group.lessons.forEach((lesson,i)=>{
+        const li = document.createElement("li");
+        li.className = i===currentIndex ? "active" : "";
+        const lessonButton = document.createElement("button");
+        lessonButton.type = "button";
+        lessonButton.setAttribute("aria-current", i===currentIndex ? "step" : "false");
+        lessonButton.innerHTML = `<span class="lesson-num">${String(i+1).padStart(2,"0")}</span><span>${lesson.title}</span>`;
+        lessonButton.onclick = ()=>{ currentIndex = i; renderNav(); renderLesson(); };
+        li.appendChild(lessonButton);
+        ul.appendChild(li);
+      });
+      groupDiv.appendChild(ul);
+    }
+    tracksEl.appendChild(groupDiv);
+  });
+}
+
+function renderLesson(){
+  const group = DATA[currentTrack];
+  const lesson = group.lessons[currentIndex];
+  crumbEl.textContent = `${group.label} · Lektion ${currentIndex+1} von ${group.lessons.length}`;
+
+  const vocabRows = lesson.vocab.map(v=>`<tr><td class="de">${v[0]}</td><td class="en">${v[1]}</td></tr>`).join("");
+
+  cardEl.innerHTML = `
+    <h2 class="lesson-title">${lesson.title}</h2>
+    <p class="lesson-goal sans">${lesson.goal}</p>
+
+    <div class="section-label">Wortschatz</div>
+    <table class="vocab-table">${vocabRows}</table>
+
+    <div class="section-label">Grammatik / Fokus</div>
+    <p class="focus-text">${lesson.focus}</p>
+
+    <div class="section-label">Beispiel</div>
+    <div class="example-box example-text">${lesson.example}</div>
+
+    <div class="section-label">Übung</div>
+    <div class="exercise-box">${lesson.exercise}</div>
+
+    <div class="tip-box"><span class="tip-label">Tipp</span><span>${lesson.tip}</span></div>
+  `;
+
+  prevBtn.disabled = (currentIndex===0 && trackKeys.indexOf(currentTrack)===0);
+  nextBtn.disabled = (currentIndex===group.lessons.length-1 && trackKeys.indexOf(currentTrack)===trackKeys.length-1);
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+
+prevBtn.onclick = ()=>{
+  if(currentIndex>0){ currentIndex--; }
+  else{
+    const ti = trackKeys.indexOf(currentTrack);
+    if(ti>0){ currentTrack = trackKeys[ti-1]; currentIndex = DATA[currentTrack].lessons.length-1; }
+  }
+  renderNav(); renderLesson();
+};
+nextBtn.onclick = ()=>{
+  const group = DATA[currentTrack];
+  if(currentIndex < group.lessons.length-1){ currentIndex++; }
+  else{
+    const ti = trackKeys.indexOf(currentTrack);
+    if(ti < trackKeys.length-1){ currentTrack = trackKeys[ti+1]; currentIndex = 0; }
+  }
+  renderNav(); renderLesson();
+};
+
+renderNav();
+renderLesson();
+</script>
+</body>
+</html>

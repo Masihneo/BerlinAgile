@@ -1,7 +1,7 @@
 {
-  "name": "Berlinagile",
-  "short_name": "Berlinagile",
-  "description": "Agile coaching and research for healthier, more effective teams.",
+  "name": "Deutsch-Sprint by Berlinagile",
+  "short_name": "Deutsch-Sprint",
+  "description": "Deutsch-Coaching mit Zwei-Wochen-Sprints, klarer Zeitplanung und regelmäßigen Standortbestimmungen.",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#fffcf7",
