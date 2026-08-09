@@ -91,7 +91,7 @@ roadmap_table.setStyle(TableStyle([
     ("TEXTCOLOR", (0, 1), (0, -1), CORAL), ("FONTNAME", (0, 1), (0, -1), "Helvetica-Bold"),
     ("TOPPADDING", (0, 0), (-1, -1), 7), ("BOTTOMPADDING", (0, 0), (-1, -1), 7)
 ]))
-roadmap_story += [roadmap_table, Spacer(1, 8 * mm), Paragraph("Stundenrichtwerte", styles["SectionTitle"]), Paragraph("Das Goethe-Institut nennt für B1 ungefähr 350 bis 650 Unterrichtseinheiten und für B2 ungefähr 600 bis 800 Unterrichtseinheiten zu je 45 Minuten. Der tatsächliche Bedarf hängt von Vorkenntnissen und Lernbedingungen ab.", styles["BodyDE"]), Paragraph("Quelle: Goethe-Institut Deutschland, Informationen zu Goethe-Zertifikat B1 und B2, abgerufen am 9. August 2026.", styles["Small"])]
+roadmap_story += [roadmap_table, Spacer(1, 8 * mm), Paragraph("Planungswerte", styles["SectionTitle"]), Paragraph("Die Wochenstunden sind interne Planungswerte für das Coaching. Sie kombinieren Unterricht, Korrektur, geführte Aufgaben und selbstständige Übung. Der tatsächliche Bedarf hängt von Vorkenntnissen, Lernbedingungen und täglicher Anwendung ab.", styles["BodyDE"]), Paragraph("Hinweis: Berlinagile ist ein unabhängiges Coaching-Angebot und nicht mit Prüfungsanbietern wie dem Goethe-Institut oder telc verbunden.", styles["Small"])]
 build_pdf("deutsch-sprint-12-monats-fahrplan.pdf", roadmap_story, "Deutsch-Sprint 12-Monats-Fahrplan")
 
 
