@@ -41,7 +41,7 @@ class PageParser(HTMLParser):
             self.links.append(values["href"])
         if tag in {"img", "script", "video", "source"} and values.get("src"):
             self.resources.append(values["src"])
-        if tag == "link" and values.get("href"):
+        if tag == "link" and values.get("href") and values.get("rel") not in {"canonical", "alternate"}:
             self.resources.append(values["href"])
         if tag == "meta":
             key = values.get("name") or values.get("property")

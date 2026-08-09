@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-# Add the production sitemap URL here after the public domain is connected.
+Sitemap: https://www.berlinagile.de/sitemap.xml

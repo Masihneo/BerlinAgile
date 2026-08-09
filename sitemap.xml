@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.berlinagile.de/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.berlinagile.de/index-de.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.berlinagile.de/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.berlinagile.de/" />
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.berlinagile.de/index-de.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.berlinagile.de/index-de.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.berlinagile.de/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.berlinagile.de/" />
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.berlinagile.de/roadmap.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.berlinagile.de/fahrplan-de.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.berlinagile.de/roadmap.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.berlinagile.de/roadmap.html" />
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.berlinagile.de/fahrplan-de.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.berlinagile.de/fahrplan-de.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.berlinagile.de/roadmap.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.berlinagile.de/roadmap.html" />
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.berlinagile.de/pricing.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.berlinagile.de/preise-de.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.berlinagile.de/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.berlinagile.de/pricing.html" />
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.berlinagile.de/preise-de.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.berlinagile.de/preise-de.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.berlinagile.de/pricing.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.berlinagile.de/pricing.html" />
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.berlinagile.de/materials.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.berlinagile.de/lernmaterial-de.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.berlinagile.de/materials.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.berlinagile.de/materials.html" />
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.berlinagile.de/lernmaterial-de.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.berlinagile.de/lernmaterial-de.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.berlinagile.de/materials.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.berlinagile.de/materials.html" />
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.berlinagile.de/lernen-de.html</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.berlinagile.de/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.berlinagile.de/about-de.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.berlinagile.de/about.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.berlinagile.de/about.html" />
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.berlinagile.de/about-de.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.berlinagile.de/about-de.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.berlinagile.de/about.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.berlinagile.de/about.html" />
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.berlinagile.de/impressum.html</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://www.berlinagile.de/datenschutz.html</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+</urlset>
