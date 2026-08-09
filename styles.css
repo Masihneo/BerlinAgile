@@ -320,8 +320,8 @@ h1 em, h2 em { color: var(--coral); font-style: normal; }
 .contact-copy > p:last-child { max-width: 460px; font-size: 18px; }
 .contact-form { display: flex; flex-direction: column; gap: 24px; }
 .contact-form label span { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 1.2px; font-weight: 700; margin-bottom: 6px; }
-.contact-form input, .contact-form textarea { width: 100%; background: transparent; border: 0; border-bottom: 1px solid rgba(20,43,54,.45); padding: 7px 0 12px; outline: 0; color: var(--navy); resize: vertical; }
-.contact-form input:focus, .contact-form textarea:focus { border-color: white; }
+.contact-form input, .contact-form textarea { width: 100%; background: rgba(255,255,255,.55); border: 1px solid rgba(20,43,54,.22); border-radius: 8px; padding: 11px 14px; outline: 0; color: var(--navy); resize: vertical; }
+.contact-form input:focus, .contact-form textarea:focus { background: rgba(255,255,255,.9); border-color: var(--navy); }
 .contact-form ::placeholder { color: rgba(20,43,54,.52); }
 .button-light { align-self: flex-start; background: var(--navy); color: white; margin-top: 4px; }
 .form-status { margin: 0; min-height: 24px; font-weight: 700; }
@@ -349,7 +349,8 @@ h1 em, h2 em { color: var(--coral); font-style: normal; }
 .package-meta { color: var(--muted); font-size: 14px; }
 .feature-list { margin: 18px 0 28px; padding-left: 20px; }
 .feature-list li { margin: 8px 0; }
-.contact-form select { width: 100%; background: transparent; border: 0; border-bottom: 1px solid rgba(20,43,54,.45); padding: 7px 0 12px; outline: 0; color: var(--navy); }
+.contact-form select { width: 100%; background: rgba(255,255,255,.55); border: 1px solid rgba(20,43,54,.22); border-radius: 8px; padding: 11px 14px; outline: 0; color: var(--navy); }
+.contact-form select:focus { background: rgba(255,255,255,.9); border-color: var(--navy); }
 .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
 .checkbox-row { display: grid; grid-template-columns: 22px 1fr; gap: 12px; align-items: start; font-size: 13px; line-height: 1.5; }
 .checkbox-row input { width: 18px; height: 18px; margin-top: 2px; accent-color: var(--navy); }
